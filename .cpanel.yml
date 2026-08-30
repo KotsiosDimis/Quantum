@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/theqzjas/repositories/Quantum
+    - cd $DEPLOYPATH && npm install --production 2>/dev/null || true
+    - mkdir -p $DEPLOYPATH/tmp && touch $DEPLOYPATH/tmp/restart.txt
