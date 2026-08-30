@@ -8,8 +8,7 @@
     "dev": "concurrently -k -n CSS,SRV -c yellow,cyan \"npm:watch:css\" \"nodemon server.js\"",
     "start": "node server.js",
     "build:css": "./node_modules/.bin/tailwindcss -i ./src/styles/tailwind.css -o ./public/css/style.css --minify",
-    "watch:css": "./node_modules/.bin/tailwindcss -i ./src/styles/tailwind.css -o ./public/css/style.css --watch",
-    "prestart": "npm run build:css"
+    "watch:css": "./node_modules/.bin/tailwindcss -i ./src/styles/tailwind.css -o ./public/css/style.css --watch"
   },
   "dependencies": {
     "compression": "^1.7.4",
