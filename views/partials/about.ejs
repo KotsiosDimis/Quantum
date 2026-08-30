@@ -1,0 +1,38 @@
+<section id="about" class="h-[calc(100vh-5rem)] flex items-center scroll-mt-20 px-margin-mobile md:px-margin-desktop bg-black overflow-hidden" aria-labelledby="about-heading">
+  <div class="max-w-container-max mx-auto w-full grid md:grid-cols-2 gap-12 md:gap-24 items-center py-24 md:py-32">
+
+    <!-- Text -->
+    <div>
+      <p class="eyebrow mb-4"><%= t('about.eyebrow') %></p>
+      <h2 id="about-heading" class="font-headline font-black text-5xl md:text-6xl lg:text-8xl uppercase mb-10 flex items-center gap-4">
+        <span class="w-2 h-12 md:h-16 bg-primary shrink-0" aria-hidden="true"></span>
+        <%= t('about.title') %>
+      </h2>
+      <p class="text-2xl md:text-3xl font-medium leading-relaxed mb-8 italic text-white/90">
+        <%= t('about.lead') %>
+      </p>
+      <p class="text-on-surface-variant text-base md:text-lg leading-8">
+        <%= t('about.body') %>
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="relative h-[60vw] md:h-[80vh] max-h-[900px]">
+      <div class="absolute -inset-4 border border-white/10 rounded-2xl" aria-hidden="true"></div>
+      <picture>
+        <source type="image/webp" srcset="<%= site.images.about.srcsetWebp %>" sizes="(min-width: 768px) 50vw, 100vw" />
+        <img
+          src="<%= site.images.about.src %>"
+          srcset="<%= site.images.about.srcsetJpg %>"
+          sizes="(min-width: 768px) 50vw, 100vw"
+          alt="<%= t('about.imageAlt') %>"
+          class="relative w-full h-full object-cover rounded-xl"
+          loading="lazy"
+          width="1400"
+          height="1167"
+        />
+      </picture>
+    </div>
+
+  </div>
+</section>

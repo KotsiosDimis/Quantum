@@ -1,0 +1,85 @@
+<section
+  id="classes"
+  class="relative bg-black overflow-hidden h-[calc(100vh-5rem)] scroll-mt-20"
+  aria-roledescription="carousel"
+  aria-label="<%= t('classes.title') %>"
+>
+  <div class="absolute top-8 left-margin-mobile md:left-margin-desktop z-20">
+    <p class="eyebrow"><%= t('classes.eyebrow') %></p>
+    <h2 class="font-headline font-black text-2xl md:text-4xl uppercase italic text-white mt-1"><%= t('classes.title') %></h2>
+  </div>
+  <div class="absolute top-8 right-margin-mobile md:right-margin-desktop z-20">
+    <span class="text-[10px] font-bold text-primary tracking-[0.2em] uppercase bg-black/40 backdrop-blur-sm px-2 py-1 rounded">
+      <%= t('classes.swipeHint') %>
+    </span>
+  </div>
+
+  <!-- Desktop arrow controls (hidden on touch/mobile, carousel is swipeable there) -->
+  <div class="hidden md:flex absolute inset-0 z-20 pointer-events-none items-center justify-between px-margin-desktop">
+    <button
+      type="button"
+      id="carousel-prev"
+      class="pointer-events-auto w-14 h-14 rounded-full border border-white/20 bg-black/30 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-all"
+      aria-label="<%= t('classes.prevSlide') %>"
+    >
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button
+      type="button"
+      id="carousel-next"
+      class="pointer-events-auto w-14 h-14 rounded-full border border-white/20 bg-black/30 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary hover:border-primary transition-all"
+      aria-label="<%= t('classes.nextSlide') %>"
+    >
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+
+  <div
+    id="carousel-track"
+    class="no-scrollbar flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth"
+  >
+    <% site.classes.forEach((cls, i) => { %>
+      <div
+        class="relative w-full shrink-0 h-full snap-start"
+        role="group"
+        aria-roledescription="slide"
+        aria-label="<%= (i + 1) + ' / ' + site.classes.length %>"
+      >
+        <img
+          src="<%= cls.image %>"
+          alt="<%= t('classes.' + cls.id + '.title') %>"
+          class="absolute inset-0 w-full h-full object-cover"
+          loading="<%= i === 0 ? 'eager' : 'lazy' %>"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+        <div class="absolute bottom-16 md:bottom-24 px-margin-mobile md:px-margin-desktop w-full max-w-container-max left-1/2 -translate-x-1/2">
+          <h3 class="aggressive-text font-headline font-black text-5xl md:text-7xl uppercase mb-4">
+            <%= t('classes.' + cls.id + '.title') %>
+          </h3>
+          <p class="text-sm md:text-base text-on-surface-variant font-bold uppercase tracking-widest max-w-[240px] md:max-w-md mb-6">
+            <%= t('classes.' + cls.id + '.description') %>
+          </p>
+          <a href="#memberships" class="hidden md:inline-flex bg-white text-black px-8 py-3 font-headline font-black uppercase tracking-tight rounded hover:bg-primary-dark hover:text-white transition-all">
+            <%= t('classes.viewProtocol') %>
+          </a>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+
+  <!-- Pagination dots (also serve as tab-like controls) -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3" role="tablist" aria-label="<%= t('classes.title') %> slides">
+    <% site.classes.forEach((cls, i) => { %>
+      <button
+        type="button"
+        class="carousel-dot w-8 md:w-12 h-1 rounded-full <%= i === 0 ? 'bg-primary' : 'bg-white/30' %>"
+        data-slide-index="<%= i %>"
+        role="tab"
+        aria-selected="<%= i === 0 ? 'true' : 'false' %>"
+        aria-label="<%= t('classes.goToSlide', { n: i + 1 }) %>"
+      ></button>
+    <% }) %>
+  </div>
+
+  <p id="carousel-live" class="sr-only" aria-live="polite"></p>
+</section>

@@ -1,0 +1,59 @@
+<footer id="contact" class="pt-20 md:pt-32 pb-28 md:pb-12 px-margin-mobile md:px-margin-desktop bg-black border-t border-surface-variant">
+  <div class="max-w-container-max mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 md:gap-16 mb-16 text-center md:text-left">
+      <div>
+        <div class="font-headline font-black italic text-3xl text-primary uppercase mb-4"><%= t('footer.title') %></div>
+        <p class="text-xs text-on-surface-variant uppercase tracking-widest">
+          &copy; <%= new Date().getFullYear() %> <%= t('footer.title') %>. <%= t('footer.rightsReserved') %>
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-bold text-[11px] uppercase tracking-widest text-on-surface-variant mb-4"><%= t('footer.contactTitle') %></h2>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a class="hover:text-primary transition-colors" href="mailto:<%= site.contact.email %>"><%= site.contact.email %></a>
+          </li>
+          <li>
+            <a class="hover:text-primary transition-colors" href="tel:<%= site.contact.phoneHref %>"><%= site.contact.phone %></a>
+          </li>
+          <li class="text-on-surface-variant"><%= site.contact.addressLine1 %>, <%= site.contact.addressLine2 %></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="font-bold text-[11px] uppercase tracking-widest text-on-surface-variant mb-4"><%= t('footer.followTitle') %></h2>
+        <ul class="flex justify-center md:justify-start gap-4" role="list">
+          <li>
+            <a href="<%= site.social.facebook %>" class="w-11 h-11 flex items-center justify-center border border-surface-variant rounded-full hover:border-primary hover:text-primary transition-colors" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6v1.9H16l-.4 2.9h-2.1v7A10 10 0 0 0 22 12z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="<%= site.social.instagram %>" class="w-11 h-11 flex items-center justify-center border border-surface-variant rounded-full hover:border-primary hover:text-primary transition-colors" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="<%= site.social.tiktok %>" class="w-11 h-11 flex items-center justify-center border border-surface-variant rounded-full hover:border-primary hover:text-primary transition-colors" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.4 2.2 1.9 3.8 4.5 4v3c-1.6 0-3-.5-4.2-1.4v6.6a5.7 5.7 0 1 1-5.7-5.7c.3 0 .6 0 .9.1v3.1a2.6 2.6 0 1 0 1.8 2.5V3h2.7z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile join CTA -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 px-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom))] bg-gradient-to-t from-black to-transparent">
+  <a
+    href="#memberships"
+    class="w-full h-14 bg-primary-dark text-white font-headline font-black text-lg uppercase tracking-tight shadow-2xl active:scale-95 transition-transform flex items-center justify-center gap-3 rounded"
+  >
+    Join Us
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+  </a>
+</div>

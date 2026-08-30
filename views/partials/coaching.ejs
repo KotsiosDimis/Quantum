@@ -1,0 +1,77 @@
+<section id="coaching" class="h-[calc(100vh-5rem)] flex items-center scroll-mt-20 py-10 px-margin-mobile md:px-margin-desktop bg-black overflow-hidden" aria-labelledby="coaching-heading">
+  <div class="max-w-container-max mx-auto w-full">
+
+    <div class="text-center mb-8">
+      <p class="eyebrow">Expert Guidance</p>
+      <h2 id="coaching-heading" class="font-headline text-3xl md:text-4xl font-black uppercase italic mt-2">Coaching</h2>
+      <p class="text-on-surface-variant text-sm mt-2 max-w-xl mx-auto">Train smarter. One-on-one attention or a structured program — our coaches have you covered.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+
+      <!-- Personal Training -->
+      <div class="bg-zinc-950 border border-white/10 rounded-2xl overflow-hidden shadow-xl shadow-black/60">
+        <div class="px-6 md:px-8 py-5 border-b border-white/10 flex items-start justify-between gap-4">
+          <div>
+            <span class="inline-block text-[10px] font-black uppercase tracking-widest text-primary border border-primary/50 rounded-full px-3 py-1 mb-2">1-on-1</span>
+            <h3 class="font-headline font-black text-xl uppercase italic">Personal Training</h3>
+            <p class="text-on-surface-variant text-xs mt-1 leading-relaxed">Private sessions built around your goals, your pace, and your body.</p>
+          </div>
+        </div>
+        <div class="divide-y divide-white/5">
+          <div class="flex items-center justify-between px-6 md:px-8 py-4 gap-4">
+            <p class="text-xs font-bold uppercase tracking-wide">Single Session</p>
+            <span class="font-headline font-black text-xl shrink-0"><%= formatPrice(25) %></span>
+          </div>
+          <div class="flex items-center justify-between px-6 md:px-8 py-4 gap-4">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wide">10 Sessions</p>
+              <p class="text-[11px] text-on-surface-variant/60 mt-0.5">Valid for 1 month</p>
+            </div>
+            <span class="font-headline font-black text-xl shrink-0"><%= formatPrice(200) %></span>
+          </div>
+          <div class="flex items-center justify-between px-6 md:px-8 py-4 gap-4">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wide">22 Sessions</p>
+              <p class="text-[11px] text-on-surface-variant/60 mt-0.5">Valid for 2 months</p>
+            </div>
+            <span class="font-headline font-black text-xl shrink-0"><%= formatPrice(400) %></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Programming & Coaching -->
+      <div class="bg-zinc-950 border border-white/10 rounded-2xl overflow-hidden shadow-xl shadow-black/60">
+        <div class="px-6 md:px-8 py-5 border-b border-white/10">
+          <span class="inline-block text-[10px] font-black uppercase tracking-widest text-primary border border-primary/50 rounded-full px-3 py-1 mb-2">Programming</span>
+          <h3 class="font-headline font-black text-xl uppercase italic">Programs & Coaching</h3>
+          <p class="text-on-surface-variant text-xs mt-1 leading-relaxed">Structured plans and ongoing coaching for athletes who train seriously.</p>
+        </div>
+        <div class="divide-y divide-white/5">
+          <div class="flex items-center justify-between px-6 md:px-8 py-4 gap-4">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wide">Training Program</p>
+              <p class="text-[11px] text-on-surface-variant/60 mt-0.5">Custom program updated monthly</p>
+            </div>
+            <span class="font-headline font-black text-xl shrink-0"><%= formatPrice(10) %><span class="text-on-surface-variant text-xs">/mo</span></span>
+          </div>
+          <div class="flex items-center justify-between px-6 md:px-8 py-4 gap-4">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wide">Powerlifting Programming</p>
+              <p class="text-[11px] text-on-surface-variant/60 mt-0.5">Via Powersheets — periodised for competition or strength goals</p>
+            </div>
+            <span class="font-headline font-black text-xl shrink-0"><%= formatPrice(30) %><span class="text-on-surface-variant text-xs">/mo</span></span>
+          </div>
+          <div class="flex items-center justify-between px-6 md:px-8 py-4 gap-4">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wide text-primary">Powerlifting Coaching</p>
+              <p class="text-[11px] text-on-surface-variant/60 mt-0.5">Full coaching — programming, technique feedback & check-ins</p>
+            </div>
+            <span class="font-headline font-black text-xl shrink-0 text-white"><%= formatPrice(90) %><span class="text-on-surface-variant text-xs">/mo</span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

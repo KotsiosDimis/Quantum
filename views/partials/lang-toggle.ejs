@@ -1,0 +1,23 @@
+<!--
+  Progressive-enhancement language switch: works as plain links with no JS
+  (server reads ?lang= and sets a cookie), main.js upgrades it to swap the
+  `lang` query param onto the *current* path/hash client-side.
+-->
+<div class="flex items-center border border-surface-variant rounded overflow-hidden" role="group" aria-label="<%= t('langToggle.label') %>">
+  <a
+    href="?lang=en"
+    hreflang="en"
+    lang="en"
+    data-lang-link="en"
+    aria-current="<%= locale === 'en' ? 'true' : 'false' %>"
+    class="lang-link px-3 py-1.5 text-xs font-headline font-black uppercase <%= locale === 'en' ? 'bg-primary-dark text-white' : 'text-on-surface-variant hover:text-white' %>"
+  ><%= t('langToggle.en') %></a>
+  <a
+    href="?lang=el"
+    hreflang="el"
+    lang="el"
+    data-lang-link="el"
+    aria-current="<%= locale === 'el' ? 'true' : 'false' %>"
+    class="lang-link px-3 py-1.5 text-xs font-headline font-black uppercase <%= locale === 'el' ? 'bg-primary-dark text-white' : 'text-on-surface-variant hover:text-white' %>"
+  ><%= t('langToggle.el') %></a>
+</div>

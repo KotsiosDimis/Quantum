@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Quantum Gym | Engineered for Performance",
+    "description": "Quantum Gym — Nicosia's premier powerlifting and strength training centre since 2017. Top-of-the-line equipment, expert coaching, and a supportive community."
+  },
+  "skipToContent": "Skip to main content",
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "memberships": "Memberships",
+    "classes": "Classes",
+    "facilities": "Facilities",
+    "joinNow": "Join Now",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "coaching": "Coaching"
+  },
+  "hero": {
+    "titleLine1": "Evolve",
+    "titleLine2": "Faster.",
+    "subtitle": "The laboratory for human performance.",
+    "cta": "Initiate Protocol",
+    "scrollHint": "Scroll to sync",
+    "heroImageAlt": "Quantum Gym floor — dumbbell racks under the Quantum Gym sign"
+  },
+  "about": {
+    "eyebrow": "Who we are",
+    "title": "The Standard",
+    "lead": "We don't train. We re-engineer.",
+    "body": "Founded in 2017 as a boutique fitness studio in Nicosia, Quantum Gym evolved into a dedicated bodybuilding and strength center focused on measurable progress. Today we are the premier powerlifting training center in Cyprus — known for top-of-the-line equipment, expert coaching, and a supportive community.",
+    "imageAlt": "Athlete performing a heavy dumbbell press under the Quantum Gym sign"
+  },
+  "memberships": {
+    "eyebrow": "Select tier",
+    "title": "Access Levels",
+    "priceSuffixMonth": "/month",
+    "priceSuffixVisit": "/visit",
+    "contactForPrice": "Ask us",
+    "periods": {
+      "7d": "7 days",
+      "1m": "1 month",
+      "3m": "3 months",
+      "6m": "6 months",
+      "1y": "1 year",
+      "month": "per month",
+      "visit": "per visit"
+    },
+    "gymOnly": {
+      "badge": "Most Flexible",
+      "title": "Gym Only",
+      "description": "Unlimited access to the gym floor and all equipment.",
+      "features": [
+        "Unlimited gym floor access",
+        "Free weights and machines",
+        "Powerlifting area access",
+        "Independent training support"
+      ],
+      "cta": "Select Plan"
+    },
+    "combo": {
+      "badge": "Best Value",
+      "title": "Gym + Classes",
+      "description": "Full facility access plus every class on the schedule.",
+      "features": [
+        "Unlimited gym access",
+        "Abs & Glutes",
+        "Circuit HiiT",
+        "Matt Pilates",
+        "Stretching",
+        "Lift Pump"
+      ],
+      "cta": "Select Plan"
+    },
+    "classVisit": {
+      "badge": "Drop-In",
+      "title": "Class Visit",
+      "description": "Join any single class session, no commitment required.",
+      "features": [
+        "One class session",
+        "Any class on the schedule",
+        "No membership needed"
+      ],
+      "cta": "Book a Class"
+    },
+    "addons": {
+      "title": "Add-Ons",
+      "subtitle": "Enhance any membership with expert-led extras.",
+      "personalTraining": "Personal Training",
+      "trainingProgram": "Training Program",
+      "plProgram": "Powerlifting Programming",
+      "plCoaching": "Powerlifting Coaching",
+      "pt1Label": "1 session",
+      "pt10Label": "10 sessions",
+      "pt10Note": "1-month limit",
+      "pt22Label": "22 sessions",
+      "pt22Note": "2-month limit",
+      "trainingProgramNote": "Custom plan updated monthly",
+      "plProgramNote": "Weekly updates via Powersheets",
+      "plCoachingNote": "1 session/week + weekly Powersheets update"
+    }
+  },
+  "classes": {
+    "eyebrow": "The Circuit",
+    "title": "Classes",
+    "swipeHint": "Swipe for more",
+    "protocolLabel": "Module",
+    "viewProtocol": "View Class",
+    "prevSlide": "Previous class",
+    "nextSlide": "Next class",
+    "goToSlide": "Go to slide {n}",
+    "absGlutes": {
+      "title": "Abs & Glutes",
+      "description": "Targeted sessions focused on core strength and lower-body development."
+    },
+    "circuitHiit": {
+      "title": "Circuit HiiT",
+      "description": "High-intensity interval circuits that build endurance, strength, and total-body conditioning."
+    },
+    "mattPilates": {
+      "title": "Matt Pilates",
+      "description": "Mat-based pilates for mobility, core stability, and body control."
+    },
+    "stretching": {
+      "title": "Stretching",
+      "description": "Guided flexibility sessions to improve range of motion and speed up recovery."
+    },
+    "liftPump": {
+      "title": "Lift Pump",
+      "description": "Barbell and dumbbell hypertrophy work for muscle growth and strength gains."
+    }
+  },
+  "gallery": {
+    "eyebrow": "Where you'll train",
+    "title": "Facilities",
+    "classroom": {
+      "title": "Classroom",
+      "description": "A dedicated coaching space for all group classes — equipped with plyo boxes, stability balls, and resistance equipment."
+    },
+    "functional": {
+      "title": "Functional Area",
+      "description": "Astro-turf zone for sled work, kettlebells, medicine balls, and athletic conditioning drills."
+    },
+    "gymArea": {
+      "title": "Gym Area",
+      "description": "Our flagship strength floor — cable machines, free weights, benches, and everything you need for serious training."
+    },
+    "powerlifting": {
+      "title": "Powerlifting Area",
+      "description": "Dedicated squat racks, barbells, and competition-spec plates. The home of Quantum Powerlifting since 2017."
+    },
+    "cardio": {
+      "title": "Cardio Area",
+      "description": "Spin bikes and conditioning equipment in an energising space built to push your limits."
+    }
+  },
+  "footer": {
+    "title": "Quantum Gym",
+    "rightsReserved": "All rights reserved.",
+    "contactTitle": "Contact",
+    "followTitle": "Follow Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "coaching": {
+    "eyebrow": "Expert Guidance",
+    "title": "Coaching",
+    "subtitle": "Work with our coaches to move better, lift heavier, and reach your goals faster.",
+    "pt": {
+      "badge": "Personal Training",
+      "title": "One-on-One Training",
+      "description": "Private sessions tailored to your goals, technique, and schedule."
+    },
+    "programming": {
+      "badge": "Programming",
+      "title": "Programs & Coaching",
+      "description": "Structured plans and ongoing coaching for athletes who train seriously."
+    }
+  }
+}

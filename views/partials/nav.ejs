@@ -1,0 +1,52 @@
+<header class="fixed top-0 inset-x-0 z-50 bg-background/85 backdrop-blur-md border-b border-surface-variant">
+  <nav class="flex items-center justify-between h-20 px-margin-mobile pl-[max(20px,env(safe-area-inset-left))] pr-[max(20px,env(safe-area-inset-right))] md:px-margin-desktop max-w-container-max mx-auto" aria-label="Primary">
+    <a href="#top" class="font-headline font-black italic text-2xl tracking-tighter uppercase text-white">
+      <%= site.siteName %>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="hidden md:flex items-center gap-8" role="list">
+      <li><a class="font-body font-bold text-sm uppercase tracking-wide text-on-surface-variant hover:text-primary" href="#top"><%= t('nav.home') %></a></li>
+      <li><a class="font-body font-bold text-sm uppercase tracking-wide text-on-surface-variant hover:text-primary" href="#about"><%= t('nav.about') %></a></li>
+      <li><a class="font-body font-bold text-sm uppercase tracking-wide text-on-surface-variant hover:text-primary" href="#memberships"><%= t('nav.memberships') %></a></li>
+      <li><a class="font-body font-bold text-sm uppercase tracking-wide text-on-surface-variant hover:text-primary" href="#coaching">Coaching</a></li>
+      <li><a class="font-body font-bold text-sm uppercase tracking-wide text-on-surface-variant hover:text-primary" href="#classes"><%= t('nav.classes') %></a></li>
+      <li><a class="font-body font-bold text-sm uppercase tracking-wide text-on-surface-variant hover:text-primary" href="#facilities"><%= t('nav.facilities') %></a></li>
+    </ul>
+
+    <div class="flex items-center gap-3">
+      
+
+      <a href="#join" class="hidden sm:inline-flex bg-primary-dark text-white px-6 py-2.5 font-headline text-sm font-black uppercase tracking-tight hover:brightness-110 active:scale-95 transition-all rounded">
+        Join Us
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <button
+        type="button"
+        id="mobile-menu-toggle"
+        class="md:hidden flex items-center justify-center w-touch-target h-touch-target text-white"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="<%= t('nav.openMenu') %>"
+        data-label-open="<%= t('nav.openMenu') %>"
+        data-label-close="<%= t('nav.closeMenu') %>"
+      >
+        <svg id="icon-menu" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu panel -->
+  <div id="mobile-menu" class="md:hidden hidden border-t border-surface-variant bg-background" role="region" aria-label="<%= t('nav.openMenu') %>">
+    <ul class="flex flex-col px-margin-mobile py-4 gap-1" role="list">
+      <li><a class="block py-3 font-headline font-bold text-lg uppercase text-white" href="#top"><%= t('nav.home') %></a></li>
+      <li><a class="block py-3 font-headline font-bold text-lg uppercase text-white" href="#about"><%= t('nav.about') %></a></li>
+      <li><a class="block py-3 font-headline font-bold text-lg uppercase text-white" href="#memberships"><%= t('nav.memberships') %></a></li>
+      <li><a class="block py-3 font-headline font-bold text-lg uppercase text-white" href="#coaching">Coaching</a></li>
+      <li><a class="block py-3 font-headline font-bold text-lg uppercase text-white" href="#classes"><%= t('nav.classes') %></a></li>
+      <li><a class="block py-3 font-headline font-bold text-lg uppercase text-white" href="#facilities"><%= t('nav.facilities') %></a></li>
+    </ul>
+  </div>
+</header>

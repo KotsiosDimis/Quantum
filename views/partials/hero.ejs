@@ -1,0 +1,40 @@
+<section id="top" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  <div class="absolute inset-0 z-0">
+    <picture>
+      <source type="image/webp" srcset="<%= site.images.hero.srcsetWebp %>" sizes="100vw" />
+      <img
+        src="<%= site.images.hero.src %>"
+        srcset="<%= site.images.hero.srcsetJpg %>"
+        sizes="100vw"
+        alt="<%= t('hero.heroImageAlt') %>"
+        class="w-full h-full object-cover brightness-[0.75]"
+        width="1600"
+        height="1200"
+        fetchpriority="high"
+      />
+    </picture>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+  </div>
+
+  <div class="relative z-10 px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto text-center md:text-left">
+    <h1 class="aggressive-text font-headline font-black text-[15vw] leading-[0.9] sm:text-7xl md:text-8xl lg:text-[7rem] mb-6">
+      <%= t('hero.titleLine1') %><br />
+      <span class="text-primary italic"><%= t('hero.titleLine2') %></span>
+    </h1>
+    <p class="text-on-surface-variant font-medium uppercase tracking-widest text-sm md:text-lg mb-10 max-w-md mx-auto md:mx-0">
+      <%= t('hero.subtitle') %>
+    </p>
+    <a
+      href="#memberships"
+      class="inline-flex items-center gap-3 bg-primary-dark text-white px-8 py-4 md:px-10 md:py-5 font-headline text-lg md:text-xl font-black uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all rounded"
+    >
+      <%= t('hero.cta') %>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+    </a>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-60 motion-safe:animate-bounce">
+    <span class="font-bold text-[10px] uppercase tracking-[0.3em]"><%= t('hero.scrollHint') %></span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+  </div>
+</section>
