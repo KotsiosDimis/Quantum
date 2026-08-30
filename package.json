@@ -1,14 +1,14 @@
 {
   "name": "quantum-gym",
   "version": "1.0.0",
-  "description": "Quantum Gym marketing site — Express + EJS, config-driven content, EN/GR i18n",
+  "description": "Quantum Gym marketing site \u2014 Express + EJS, config-driven content, EN/GR i18n",
   "private": true,
   "main": "server.js",
   "scripts": {
     "dev": "concurrently -k -n CSS,SRV -c yellow,cyan \"npm:watch:css\" \"nodemon server.js\"",
     "start": "node server.js",
-    "build:css": "tailwindcss -i ./src/styles/tailwind.css -o ./public/css/style.css --minify",
-    "watch:css": "tailwindcss -i ./src/styles/tailwind.css -o ./public/css/style.css --watch",
+    "build:css": "./node_modules/.bin/tailwindcss -i ./src/styles/tailwind.css -o ./public/css/style.css --minify",
+    "watch:css": "./node_modules/.bin/tailwindcss -i ./src/styles/tailwind.css -o ./public/css/style.css --watch",
     "prestart": "npm run build:css"
   },
   "dependencies": {
